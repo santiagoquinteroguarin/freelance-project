@@ -10,6 +10,14 @@
 html {
     font-size: 62.5%;
     box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+.services,
+.main-navigation,
+.form {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
 }
 
 *,
