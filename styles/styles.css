@@ -1,5 +1,17 @@
+:root {
+    --grey-ligth: #eeeeee;
+    --black: #222831;
+    --grey: #393e46;
+    --blue: #00adb5;
+    --secondary: #30e3ca;
+}
+
 html {
     font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
 h1 {
@@ -9,4 +21,38 @@ h1 {
 
 h1 span {
     font-size: 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--blue);
+}
+
+.main-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-navigation a {
+    color: var(--grey-ligth);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.main-navigation a:hover {
+    background-color: var(--secondary);
+    color: var(--black);
+}
+
+@media (min-width: 768px) {
+    .main-navigation {
+        flex-direction: row;
+    }
 }
